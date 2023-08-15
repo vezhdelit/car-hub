@@ -8,13 +8,16 @@ const Header = () => {
     <header className="w-full absolute z-10">
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
         <Link href="/" className="flex justify-center items-center">
-          <Image
-            src="/logo.svg"
-            alt="Car Hub Logo"
-            width={118}
-            height={18}
-            className="object-contain"
-          />
+          <div className="flex items-center gap-2">
+            <Image
+              src="/logo.svg"
+              alt="Car Hub Logo"
+              width={40}
+              height={40}
+              className="object-contain"
+            />
+            <h3 className=" text-xl font-black">DriveHub</h3>
+          </div>
         </Link>
         <CustomButton
           title="Sign In"
